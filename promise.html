@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src='./promise.js'></script> -->
+    <script>
+    
+        // let Promise = require("./promise")
+        let p = new Promise((resove,reject)=>{
+            // resove(new Promise((resove,reject)=>{
+            //     console.log('eee')
+            //     resove(100)
+            // }))
+            resove(100)
+        })
+        p.then((res)=>{
+            console.log('val33',res)
+            return new Promise(()=>{})
+        },(val)=>{
+            console.log('val',val)
+        })
+        // p.then(()=>{}).then(()=>{},(ee)=>{
+        //     console.log(111)
+        // })
+        // p.then((data)=>{
+        //      throw Error('ddddd')
+        // }).finally((data)=>{
+        //     console.log('fff',data)
+        // }).then(null,err=>{
+        //     console.log(err)
+        // })
+        // let p2 = p.then((value)=>{
+        //     console.log('成功',value)
+        //     return p2
+        // },(value)=>{
+        //     console.log('失败',value)
+        //     return 'hhhh'
+        // })
+        // p2.then(()=>{
+        //     console.log('哈哈哈')
+        // },(err)=>{
+        //     console.log('www',err)
+        // })
+      
+
+       
+    
+    </script>
+</body>
+</html>
